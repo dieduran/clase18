@@ -1,0 +1,95 @@
+[
+  {
+    "timestamp": 1636806218129,
+    "productos": [],
+    "id": 1
+  },
+  {
+    "timestamp": 1636806274847,
+    "productos": [
+      {
+        "id": 8,
+        "timestamp": 1636806283556,
+        "nombre": "p10",
+        "descripcion": "",
+        "codigo": "",
+        "foto": "",
+        "precio": 10,
+        "stock": 1
+      }
+    ],
+    "id": 2
+  },
+  {
+    "timestamp": 1638303481127,
+    "productos": [
+      {
+        "id": 1,
+        "timestamp": 1638303482991,
+        "nombre": "Producto 1",
+        "descripcion": "",
+        "codigo": "",
+        "foto": "",
+        "precio": 12.45,
+        "stock": 1
+      },
+      {
+        "id": 2,
+        "timestamp": 1638303484479,
+        "nombre": "Producto 2",
+        "descripcion": "",
+        "codigo": "",
+        "foto": "",
+        "precio": 11.8,
+        "stock": 1
+      }
+    ],
+    "id": 6
+  },
+  {
+    "timestamp": 1638303828205,
+    "productos": [
+      {
+        "id": 2,
+        "timestamp": 1638303836041,
+        "nombre": "Producto 2",
+        "descripcion": "",
+        "codigo": "",
+        "foto": "",
+        "precio": 11.8,
+        "stock": 1
+      },
+      {
+        "id": 5,
+        "timestamp": 1638303841040,
+        "nombre": "Producto 5 ahora 7",
+        "descripcion": "",
+        "codigo": "",
+        "foto": "",
+        "precio": 19.21,
+        "stock": 1
+      }
+    ],
+    "id": 7
+  },
+  {
+    "timestamp": 1638304255771,
+    "productos": [],
+    "id": 8
+  },
+  {
+    "timestamp": 1638304374059,
+    "productos": [],
+    "id": 9
+  },
+  {
+    "timestamp": 1638321289076,
+    "productos": [],
+    "id": 10
+  },
+  {
+    "timestamp": 1638321292958,
+    "productos": [],
+    "id": 11
+  }
+]

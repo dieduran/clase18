@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div class="container mt-3">
+    <div class="jumbotron">
+        {{#if userName}}  
+            <div class="form-group last text-right" style="margin-bottom:0px;">
+                <form action="/logout" method="get" class="form-horizontal" role="form">
+                    <div class="col-sm-offset-3 col-sm-12">
+                        <h3 >Bienvenido/a {{userName}} !</h3>
+                        {{#if userAvatar}}
+                            <img style="max-height: 40px; max-width: 40px;" src="{{userAvatar}}">
+                        {{else}}
+                            <img style="max-height: 40px; max-width: 40px;" src="https://cdn.imgbin.com/3/5/9/imgbin-computer-icons-user-profile-user-account-avatar-TfT3FkAEbgD76My1GynmW5KzT.jpg">
+                        {{/if}}
+                        <input type="hidden" name="form" value="1" />
+                        <a class="btn btn-primary btn-sm" href="/carrito">Ir al Carrito</a>
+                        <button type="submit" class="btn btn-success btn-sm">Desloguearse</button>
+                    </div>
+                </form>
+            </div>
+            <h1 style="color:blue;">Editor de productos</h1>
+            
+        {{else}}
+            <div class="form-group last text-right" style="margin-bottom:0px;">
+                <form action="/login" method="get" class="form-horizontal" role="form">
+                    <div class="col-sm-offset-3 col-sm-12">
+                        <h3>Bienvenido!</h3>
+                        <input type="hidden" name="form" value="1" />
+                        <button type="submit" class="btn btn-success btn-sm">
+                        Loguearse
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <h1 style="color:blue;">Productos</h1>
+        {{/if}}
+       
+        <br>
+        <div id="listaProductos"></div>
+        <script src="/js/index.js"></script>
+
+        {{#if userName}}  
+        <div class="jumbotron" style="background-color:darkgray;">
+            <div id="formularioEditor">
+            </div>
+        </div>
+        {{else}}
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": 1636806218129,
+    "productos": [],
+    "id": 1
+  },
+  {
+    "timestamp": 1636806274847,
+    "productos": [
+      {
+        "id": 8,
+        "timestamp": 1636806283556,
+        "nombre": "p10",
+        "descripcion": "",
+        "codigo": "",
+        "foto": "",
+        "precio": 10,
+        "stock": 1
+      }
+    ],
+    "id": 2
+  },
+  {
+    "timestamp": 1636806333272,
+    "productos": [],
+    "id": 3
+  }
+]
